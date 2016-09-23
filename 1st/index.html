@@ -1,15 +1,18 @@
-<html ng-app"LunchCheck">
+<html>
 <head>
   <script src="angular.min.js"></script>
   <script src="app.js"></script>
   <title>1st One</title>
 </head>
 <h1>Count My Lunch Items!</h1>
-<body ng-controller="LunchCheckController">
+I'm not gonna consider empty items.
+<body ng-app="LunchCheck" ng-controller="LunchCheckController">
 
 <input type="text" ng-model="items"/>
 <button ng-click="countItems()">Check If Too Much</button>
 <br/>
-{{message}}
+<span style="color: {{color}};">
+  {{message}}
+<span>
 </body>
 </html>
